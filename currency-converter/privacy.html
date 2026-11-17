@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Currency Converter Offline Privacy Policy</title>
+<!--
+  Planned public URL: https://varian1.github.io/currency-converter/privacy.html
+  (must match PRIVACY_POLICY_URL in src/lib/links.ts and the Play listing).
+  The contact address must match the store listing's contact email.
+  Written from the code (2026-11-17). Re-check it whenever data handling, SDKs or rate sources change.
+-->
+<style>
+  :root { --bg:#ffffff; --fg:#111827; --muted:#4b5563; --accent:#0f7b5f; --line:#e5e7eb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0e1412; --fg:#e8f0ec; --muted:#9db0a8; --accent:#3dc79e; --line:#2c3a35; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); }
+  .summary { background:rgba(15,123,95,.08); border-left:4px solid var(--accent);
+             padding:12px 16px; border-radius:8px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Currency Converter Offline Privacy Policy</h1>
+<p class="muted">Effective November 17, 2026</p>
+
+<div class="summary">
+  <p><strong>In short:</strong> the amounts you type and the currencies you save stay on your device.
+  There is no account and no server of ours that receives your data.
+  To get exchange rates, the app connects to the rate source you choose, and the free app shows ads from
+  Google AdMob, which collects some device data as described below.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Currency Converter Offline ("the app") is published by the developer shown on its Google Play page
+("we"). For any privacy question, email <a href="mailto:maximumunlimited@gmail.com">maximumunlimited@gmail.com</a>.</p>
+
+<h2>What stays on your device</h2>
+<ul>
+  <li><strong>Your choices.</strong> Saved currencies and their order, the amount and currency you last used, theme, language and the selected rate source are stored in the app's private storage on your device.</li>
+  <li><strong>Downloaded rates.</strong> The last exchange rates the app downloaded are kept on your device so the app works offline.</li>
+  <li><strong>Server status results.</strong> The latest results of the checks described below are kept on your device.</li>
+  <li><strong>Rating reminder.</strong> The app counts, on your device, on how many days you used it, to decide when to ask you to rate it once.</li>
+  <li><strong>Backups.</strong> On Android, this app data may be included in your Android (Google) backup if you have backups turned on, like most apps' data. We cannot see it.</li>
+  <li>The app does not use your camera, microphone, contacts, photos or precise location, and it has no account, login or analytics of its own.</li>
+</ul>
+
+<h2>Connections the app makes</h2>
+<h3>Exchange-rate sources</h3>
+<p>To download rates, the app connects over HTTPS to the source selected in Settings:</p>
+<ul>
+  <li><strong>Currency API</strong> (default) through the jsDelivr content network (<code>cdn.jsdelivr.net</code>), with a fallback on Cloudflare Pages (<code>currency-api.pages.dev</code>);</li>
+  <li><strong>Frankfurter</strong> (<code>api.frankfurter.dev</code>);</li>
+  <li><strong>ExchangeRate-API Open Access</strong> (<code>open.er-api.com</code>).</li>
+</ul>
+<p>The app sends no account, advertising ID or other identifier in these requests, but like any website the
+service you select can see your IP address and the time of the request. Each service has its own privacy
+practices. Exchange rates are reference rates and may differ from the rates offered by banks or exchange services.</p>
+
+<h3>Server status checks</h3>
+<p>Settings has a "Server status" section. Only when you tap <strong>Check</strong> or <strong>Check all</strong>,
+the app requests a small status file hosted by the developer for the services named there. These requests send no
+personal data, and the host can see your IP address like any web server.</p>
+
+<h3>Google Play in-app review</h3>
+<p>After you have used the app on a few different days, it may ask you once to rate it using Google Play's
+in-app review. Google handles that dialog and any rating you give under its own privacy policy.</p>
+
+<h2>Data collected by Google AdMob</h2>
+<p>The free app shows ads from Google AdMob. To show ads, measure them and prevent fraud, the Google Mobile Ads
+SDK may collect and share with Google:</p>
+<ul>
+  <li>your IP address, which can be used to estimate your general location;</li>
+  <li>device and account identifiers, such as the advertising ID;</li>
+  <li>interactions with the app and with ads (for example app launches and ad taps);</li>
+  <li>diagnostic information (for example crashes and performance).</li>
+</ul>
+<p>Data is sent encrypted. Where the law requires it (for example in the EEA, the UK, Switzerland and some US states),
+the app asks for your choice before ads load, and you can change it later in
+<strong>Settings &rarr; Ad privacy choices</strong>, which appears where such a choice applies. You can also reset
+or delete your advertising ID in your device settings. Learn how Google uses this data at
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+<p>Your amounts, saved currencies and the other data listed above under "What stays on your device" are not sent
+to Google or to us.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+<h2>Keeping and deleting your data</h2>
+<p>Data on your device stays until you clear the app's storage or uninstall the app. Because we don't hold your data,
+we can't access, export or delete it for you. For ad data held by Google, use your device's ad settings and
+<a href="https://myadcenter.google.com/">Google's My Ad Center</a>.</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live (for example under the GDPR or US state laws), you may have rights to access,
+correct, delete or object to the use of personal data. Contact us at the address above and we will help,
+including by pointing you to Google or to the rate service you selected for data they hold.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update it here and change the date at the top.</p>
+</main>
+</body>
+</html>
