@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Public URL: https://varian1.github.io/steady/privacy.html . Copied from the Steady app repo (site/privacy.html); keep both in sync. -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy – Steady</title>
+    <meta name="description" content="How the Steady habit tracker handles your data." />
+    <meta name="color-scheme" content="light dark" />
+    <style>
+:root {
+  color-scheme: light dark;
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #15181d;
+  --muted: #5b6370;
+  --border: #e3e6eb;
+  --accent: #208aef;
+  --accent-ink: #ffffff;
+  --accent-soft: #e6f4fe;
+  --radius: 14px;
+  --max: 46rem;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1114;
+    --surface: #171a1f;
+    --text: #eef1f5;
+    --muted: #a3abb8;
+    --border: #2a2f37;
+    --accent: #4aa3ff;
+    --accent-ink: #0b1220;
+    --accent-soft: #14273b;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 60px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.brand svg {
+  width: 28px;
+  height: 28px;
+  flex: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 0.9375rem;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current='page'] {
+  color: var(--text);
+}
+
+main {
+  padding: 40px 0 56px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.375rem;
+  margin-top: 36px;
+}
+
+h3 {
+  font-size: 1.0625rem;
+  margin-top: 24px;
+}
+
+p,
+ul,
+ol,
+table {
+  margin: 0 0 16px;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 6px;
+}
+
+.lead {
+  font-size: 1.1875rem;
+  color: var(--muted);
+  max-width: 36rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.hero {
+  padding: 16px 0 8px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 8px;
+}
+
+/* Placeholder until the official App Store / Google Play badge artwork is added. */
+.badge {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 168px;
+  min-height: 52px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: var(--text);
+  color: var(--bg);
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.badge small {
+  font-size: 0.6875rem;
+  opacity: 0.8;
+}
+
+.badge strong {
+  font-size: 1.0625rem;
+}
+
+.badge[aria-disabled='true'] {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 12px;
+  margin: 32px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  margin: 0;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.callout {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+
+.callout ul {
+  margin-bottom: 0;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 0 0 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  font-weight: 600;
+  background: var(--surface);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0 40px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+
+.site-footer a {
+  color: var(--muted);
+}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <span class="brand">
+          <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#208AEF" />
+            <path d="M9 16.5l4.5 4.5L23 11.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          Steady
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <article class="wrap">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: 21 October 2026</p>
+
+        <div class="callout">
+          <strong>The short version</strong>
+          <ul>
+            <li>Your habits, check-ins and reminders stay on your device. We never upload them, and we have no servers that could store them.</li>
+            <li>Steady has no accounts and no separate analytics SDK.</li>
+            <li>Purchases are handled by Apple or Google, with RevenueCat keeping track of your Premium status.</li>
+            <li>Only the free version can show ads. When ads are on, Google AdMob collects device and advertising data to show and measure ads.</li>
+            <li>Premium users see no ads.</li>
+          </ul>
+        </div>
+
+        <h2>1. Who we are</h2>
+        <p>
+          Steady is developed and published by the developer of the app ("we", "us"). We are the
+          controller for the limited personal data described here. Contact us at
+          <a href="mailto:maximumunlimiteds@gmail.com">maximumunlimiteds@gmail.com</a>.
+        </p>
+
+        <h2>2. Your habit data stays on your device</h2>
+        <p>
+          The habits you create, your check-ins, your reminder times and your settings are stored
+          in a local SQLite database inside the app on your phone. This data is never sent to us or
+          to any third party. We cannot see it, recover it or delete it for you.
+        </p>
+        <p>
+          Your phone's own backup features (such as iCloud Backup or Android backup) may include
+          app data, depending on your device settings. Those backups are handled by Apple or Google
+          under your account with them, and we have no access to them. Deleting the app deletes the
+          data stored on the device.
+        </p>
+
+        <h2>3. Data processed when you use Steady</h2>
+
+        <h3>3.1 App settings file</h3>
+        <p>
+          The app downloads a small settings file from this website (for example, whether ads are
+          switched on). No identifiers or habit data are sent with this request. As with any web
+          request, our hosting provider (Vercel) receives your IP address and basic technical
+          information such as your user agent, and may keep them briefly in server logs for
+          security and operations. See the
+          <a href="https://vercel.com/legal/privacy-notice">Vercel Privacy Notice</a>.
+        </p>
+
+        <h3>3.2 Purchases and Premium status</h3>
+        <p>
+          Subscriptions and the lifetime purchase are processed by Apple (App Store) or Google
+          (Google Play). We never receive your payment card details.
+        </p>
+        <p>
+          We use <a href="https://www.revenuecat.com/privacy">RevenueCat</a> to process purchases
+          and check whether you have Premium. RevenueCat receives an anonymous app user ID it
+          generates, your purchase and subscription history (products, transactions and
+          receipts), and basic device and app information such as platform, operating system and
+          app version, country or store region, and IP address. The app contacts RevenueCat to check
+          your Premium status, so this happens even if you never buy anything, but RevenueCat
+          does not receive your name, email address or habit data from Steady.
+        </p>
+
+        <h3>3.3 Advertising (free version only)</h3>
+        <p>
+          The free version of Steady may show a banner on the Stats screen and an optional
+          rewarded ad that you choose to watch (for example, to try premium themes for 24 hours).
+          We show no other ad formats. Ads are only shown when we have them switched on; when they
+          are off, or when the app knows at launch that you have Premium, the advertising SDKs are
+          not started.
+        </p>
+        <p>
+          When ads are on, the app uses <strong>Google AdMob</strong> (Google Ireland Limited for
+          users in the EEA, UK and Switzerland, Google LLC elsewhere) to request and show ads.
+          Google collects, directly from your device:
+        </p>
+        <ul>
+          <li>device and advertising identifiers, such as the Apple advertising identifier (IDFA, only if you allow tracking), identifier for vendor (IDFV) and Android advertising ID;</li>
+          <li>IP address, and approximate (coarse) location derived from it;</li>
+          <li>device and app information, such as device model, operating system, language and app version;</li>
+          <li>ad interactions, such as which ads were shown, tapped or watched to completion;</li>
+          <li>diagnostics, such as crash and performance data related to ads.</li>
+        </ul>
+        <p>
+          Google uses this data to deliver and measure ads, cap how often you see them, detect
+          fraud and invalid traffic and, where you allow it, to personalize ads. Google handles
+          this data under its own policies:
+          <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and
+          <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites or apps that use its services</a>.
+        </p>
+
+        <h3>3.4 Consent management (EEA, UK, Switzerland and some US states)</h3>
+        <p>
+          Where the law requires your consent or gives you a choice about advertising data, the
+          app shows Google's consent form (Google User Messaging Platform) before any ad is
+          requested. Google records your choices on your device so they can be applied. You can
+          review or change your choices at any time in the app's Settings under "Privacy choices",
+          when that option is shown for your region.
+        </p>
+
+        <h3>3.5 Reminders</h3>
+        <p>
+          Reminders are local notifications scheduled on your device. Steady does not use a push
+          notification service, and no notification token or reminder content leaves your device.
+        </p>
+
+        <h2>4. Your choices</h2>
+        <ul>
+          <li><strong>Tracking on iPhone.</strong> Steady asks for permission through Apple's App Tracking Transparency prompt. If you choose "Ask App Not to Track", the advertising identifier is not shared and ads are not based on tracking across other companies' apps and websites. You can change this in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
+          <li><strong>Consent (EEA, UK, Switzerland).</strong> You can accept, reject or customize consent for advertising purposes, and change it later in the app's Settings.</li>
+          <li><strong>United States.</strong> Where a US state law gives you the right to opt out of the sale or sharing of personal information or of targeted advertising, Google's consent form offers that choice, and you can change it later in the app's Settings under "Privacy choices". You can also manage ad personalization at <a href="https://adssettings.google.com">adssettings.google.com</a>.</li>
+          <li><strong>Android advertising ID.</strong> You can reset or delete your advertising ID in your device's privacy settings.</li>
+          <li><strong>Go ad-free.</strong> Premium removes all ads.</li>
+        </ul>
+
+        <h2>5. Legal bases (EEA and UK)</h2>
+        <p>
+          We rely on your consent for personalized advertising and for ad partners accessing
+          information on your device where consent is required; on performance of a contract to
+          provide purchases and Premium; and on our legitimate interests in operating the app
+          securely, preventing fraud and invalid traffic, and delivering the app settings file.
+        </p>
+
+        <h2>6. Children</h2>
+        <p>
+          Steady is intended for adults aged 18 and over and is not directed at children. We do not
+          knowingly collect personal data from children. If you believe a child has used the app
+          in a way that shared personal data, contact us and we will help.
+        </p>
+
+        <h2>7. How long data is kept</h2>
+        <p>
+          Habit data stays on your device until you delete it or the app. We do not keep copies.
+          RevenueCat keeps purchase records as long as needed to provide Premium and meet legal
+          obligations. Google and our hosting provider keep data
+          according to their own policies.
+        </p>
+
+        <h2>8. International transfers</h2>
+        <p>
+          The service providers above may process data in the United States and other countries.
+          Where required, they rely on safeguards such as the European Commission's Standard
+          Contractual Clauses.
+        </p>
+
+        <h2>9. Your rights</h2>
+        <p>
+          Depending on where you live, you may have the right to access, correct, delete or port
+          your personal data, to object to or restrict processing, to withdraw consent at any time,
+          and to opt out of the sale or sharing of personal information. Because we do not hold
+          your habit data, most requests about advertising or purchase data are fulfilled by the
+          companies listed above; contact us and we will help you reach them. You may also
+          complain to your local data protection authority.
+        </p>
+
+        <h2>10. Security</h2>
+        <p>
+          Your habit data is protected by your device's own security, such as your passcode and
+          device encryption. Network requests made by the app use encrypted connections (HTTPS).
+        </p>
+
+        <h2>11. Changes</h2>
+        <p>
+          If we change how Steady handles data, we will update this page and the date above, and
+          update the App Store and Google Play privacy details before the change takes effect.
+        </p>
+
+        <h2>12. Contact</h2>
+        <p>
+          Steady<br />
+          Email: <a href="mailto:maximumunlimiteds@gmail.com">maximumunlimiteds@gmail.com</a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>&copy; 2026 Steady</span>
+        <nav aria-label="Footer">
+          <a href="mailto:maximumunlimiteds@gmail.com">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
