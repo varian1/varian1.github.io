@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wi-Fi Tools Privacy Policy</title>
+<!--
+  Planned public URL: https://varian1.github.io/wifitools/privacy.html
+  (must match PRIVACY_POLICY_URL in src/screens/SettingsScreen.tsx and the Play / App Store listings).
+  The contact address must match the store listing's contact email (store/play-listing.md).
+-->
+<style>
+  :root { --bg:#ffffff; --fg:#111827; --muted:#4b5563; --accent:#2563eb; --line:#e5e7eb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f172a; --fg:#e5e7eb; --muted:#9ca3af; --accent:#7da7ff; --line:#1f2937; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); }
+  .summary { background:rgba(37,99,235,.08); border-left:4px solid var(--accent);
+             padding:12px 16px; border-radius:8px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Wi-Fi Tools Privacy Policy</h1>
+<p class="muted">Effective November 23, 2026</p>
+
+<div class="summary">
+  <p><strong>In short:</strong> the Wi-Fi scans, the network list, your heat maps and your settings stay on your phone.
+  There is no account and no Wi-Fi Tools server, so we never receive them.
+  Some tools contact the internet only when you start them, as described below.
+  The free version shows ads from Google AdMob, which collects some device data. Removing ads turns the ad SDK off.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Wi-Fi Tools ("the app") is published by the developer shown on its Google Play page ("we").
+For any privacy question, email <a href="mailto:maximumunlimiteds@gmail.com">maximumunlimiteds@gmail.com</a>.</p>
+
+<h2>What stays on your device</h2>
+<ul>
+  <li><strong>Location permission.</strong> Android requires it to scan for nearby Wi-Fi networks. The app reads the list of networks (names, signal, channel, security, hardware address of each access point) to draw graphs and ratings. It does not read your GPS position, and the scan results are never uploaded.</li>
+  <li><strong>Local network tools.</strong> The LAN scanner, port scanner, ping, traceroute and the Wi-Fi (LAN) speed test talk to devices on your own network or to the addresses you type in. The list of devices found stays on your phone.</li>
+  <li><strong>Heat maps.</strong> A floor plan you import with the system photo picker or take with your camera app, and the signal points you record, are stored in the app's private storage. The app only sees the image you pick and never asks for access to your whole library. A heat map leaves the app only when you tap Share, and only to the app you choose.</li>
+  <li><strong>Settings and history.</strong> Theme, language, sort order, recent hosts and speed test results are saved in the app's private storage.</li>
+  <li><strong>Backups.</strong> The app opts out of Android system backup.</li>
+</ul>
+
+<h2>When the app contacts the internet</h2>
+<p>We run no servers. These requests happen only when you use the matching feature:</p>
+<ul>
+  <li><strong>Internet speed test.</strong> Uses Measurement Lab (M-Lab), an open research platform. The app asks M-Lab's locate service for a nearby server and runs the test against it. <strong>M-Lab publishes every test result, including your public IP address, as open data.</strong> The app shows a notice before your first test. See <a href="https://www.measurementlab.net/privacy/">M-Lab's privacy policy</a>.</li>
+  <li><strong>Public IP address.</strong> Shown only when you tap to reveal it, using Cloudflare's trace page (1.1.1.1).</li>
+  <li><strong>DNS, WHOIS, SSL and mail checks, ping, traceroute, port scan.</strong> These contact the host you enter (and, for WHOIS, the registry found through the IANA RDAP list). The host owner can see the request and your IP address, like any connection.</li>
+</ul>
+<p>These services have their own privacy policies. We do not send them any other data about you or your phone.</p>
+
+<h2>Data collected by Google services in the app</h2>
+<h3>Google AdMob (free version only)</h3>
+<p>To show ads, measure them and prevent fraud, the Google Mobile Ads SDK may collect and share with Google:</p>
+<ul>
+  <li>your IP address, which can be used to estimate your general location;</li>
+  <li>device and account identifiers, such as the advertising ID and app set ID;</li>
+  <li>interactions with the app and with ads (for example app launches and ad taps);</li>
+  <li>diagnostic information (for example app launch time and performance).</li>
+</ul>
+<p>Data is sent encrypted. Where the law requires it (for example in the EEA, the UK and some US states),
+the app asks for your choice before ads load, and you can change it any time in
+<strong>Settings &rarr; About &rarr; Ad privacy choices</strong>. You can also reset or delete your advertising ID in your device settings.
+Learn how Google uses this data at
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+<p>If you buy <strong>Remove ads</strong>, the ad SDK is not started, so no ad data is collected.</p>
+
+<h2>Purchases</h2>
+<p>The Remove ads purchase is made through Google Play, which processes the payment; we never see your payment details.
+The app checks the purchase with Google Play and keeps only whether ads are removed.</p>
+
+<h2>Ratings</h2>
+<p>After you have used the app a few times, it may ask for a rating through Google Play's in-app review. Google handles that dialog; the app does not see your answer.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+<h2>Keeping and deleting your data</h2>
+<p>Your data stays on your phone until you delete heat maps in the app, clear the app's storage in Android settings, or uninstall the app.
+Because we don't hold your data, we can't access, export or delete it for you.
+For ad data held by Google, use your device's ad settings and
+<a href="https://myadcenter.google.com/">Google's My Ad Center</a>.</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live (for example under the GDPR or US state laws), you may have rights to access,
+correct, delete or object to the use of personal data. Contact us at the address above and we will help,
+including by pointing you to Google or M-Lab for data they hold.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update it here and change the date at the top.</p>
+</main>
+</body>
+</html>
