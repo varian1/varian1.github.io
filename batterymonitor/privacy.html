@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battery Monitor: Charge Log Privacy Policy</title>
+<!--
+  Public URL: https://varian1.github.io/batterymonitor/privacy.html
+  Must match the Play listing's privacy policy URL and the in-app link (R.string.privacy_policy_url).
+  Contact address (2026-11-28, given by the developer): use the same one as the Play listing's contact email.
+  Written from the code (2026-11-25): Room readings + charging sessions and a DataStore Premium flag on device,
+  allowBackup=false, no permissions beyond INTERNET/ACCESS_NETWORK_STATE (+ those the ads SDK adds),
+  AdMob banner for free users after UMP consent, Play Billing (billing-ktx) for the one-time Premium purchase, cached on device.
+  No analytics, crash reporting, accounts or server of ours. If an SDK or the consent flow changes, update this page.
+-->
+<style>
+  :root { --bg:#ffffff; --fg:#111827; --muted:#4b5563; --accent:#0b6bcb; --line:#e5e7eb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b0d12; --fg:#e5e7eb; --muted:#9ca3af; --accent:#8ab4f8; --line:#1f2937; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:1.05rem; margin:20px 0 4px; }
+  .muted { color:var(--muted); }
+  .summary { background:rgba(11,107,203,.08); border-left:4px solid var(--accent);
+             padding:12px 16px; border-radius:8px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Battery Monitor: Charge Log Privacy Policy</h1>
+<p class="muted">Effective November 28, 2026</p>
+
+<div class="summary">
+  <p><strong>In short:</strong> there is no account and no server of ours. Your battery readings and charging history
+  stay on your device. The free version shows ads from Google AdMob, which collects some device data as described
+  below. Premium turns ads off.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Battery Monitor: Charge Log ("the app") is published by the developer shown on its Google Play page ("we").
+For any privacy question, email <a href="mailto:kitvarastudio@gmail.com">kitvarastudio@gmail.com</a>.</p>
+
+<h2>What stays on your device</h2>
+<ul>
+  <li><strong>Battery history.</strong> While the app is open, and about every 15 minutes in the background, it saves
+  the time, battery level, temperature, voltage and whether the phone is plugged in. From these it records charging
+  sessions (start and end time and level, power source and peak temperature). This is kept in a database in the app's
+  private storage for up to 90 days. You can delete all of it in Settings.</li>
+  <li><strong>Purchase status.</strong> Whether Premium is unlocked is stored in the app's private storage.</li>
+  <li><strong>No backups.</strong> The app turns off Android's automatic app backup, so this data is not copied to your
+  Google account. Uninstalling the app deletes it.</li>
+  <li>The battery values come from Android's public battery information, which needs no permission. The app does not
+  ask for location, contacts, camera, microphone, photos or files, and does not need an account.</li>
+</ul>
+
+<h2>Data collected by services in the app</h2>
+<h3>Google AdMob (free version)</h3>
+<p>To show ads, measure them and prevent fraud, the Google Mobile Ads SDK may collect and share with Google:</p>
+<ul>
+  <li>your IP address, which can be used to estimate your general location;</li>
+  <li>device identifiers, such as the advertising ID;</li>
+  <li>interactions with the app and with ads (for example app launches and ad taps);</li>
+  <li>diagnostic information (for example performance and crash data).</li>
+</ul>
+<p>A banner ad appears at the bottom of the screen. Where the law requires it (for example in the EEA, the UK and
+some US states), the app asks for your choice before ads load, and you can change it later under Settings →
+Ad privacy choices. You can reset or delete your advertising ID, or opt out of ad personalization, in your device's
+Google settings. Learn how Google uses this data at
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+With <strong>Premium</strong>, no ads are shown and the ads SDK is not started.</p>
+
+<h3>Google Play Billing (Premium)</h3>
+<p>Premium is a one-time purchase handled by Google Play. Google processes the payment and tells the app whether you own
+Premium; we never see your payment details, name or email. See
+<a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+<h2>What we do not do</h2>
+<p>We do not run analytics, crash reporting or advertising of our own, do not sell your data, and do not build a profile
+of you. Your battery history is never sent to us or to anyone else.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+<h2>Keeping and deleting your data</h2>
+<p>Your battery history stays on your device for up to 90 days, or until you delete it in Settings or uninstall the
+app. Because we don't hold your data, we can't access, export or delete it for you. For data held by Google, use the
+privacy tools linked above.</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live (for example under the GDPR or US state laws), you may have rights to access, correct,
+delete or object to the use of personal data. Contact us at the address above and we will help, including by pointing
+you to Google for data held by its services.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update it here and change the date at the top.</p>
+</main>
+</body>
+</html>
